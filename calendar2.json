@@ -1,0 +1,132 @@
+{
+    "config": {
+        "url": "https://www.googleapis.com/calendar/v3/users/me/calendarList",
+        "method": "GET",
+        "userAgentDirectives": [
+            {
+                "product": "google-api-nodejs-client",
+                "version": "7.0.0",
+                "comment": "gzip"
+            }
+        ],
+        "headers": {
+            "x-goog-api-client": "gdcl/7.0.0 gl-node/18.16.0",
+            "Accept-Encoding": "gzip",
+            "User-Agent": "google-api-nodejs-client/7.0.0 (gzip)",
+            "Authorization": "Bearer ya29.a0AfB_byD2O16wQ67wiG7Wn6kBzY9iAGbxVCoJzNVh0LpfJ2tg-z-W3mSkjiEZYrhuQQmjngQkg2dVyzaI8ko1qSmAGVv22pn8BKoA5tggCQScMwwMWri2xtWZgulDN67IxjDb51hmCzVWJtRicENlKNLeZtj4-SOKXLO1wQaCgYKAesSARASFQHsvYlseDJc7h9BXfHJeGLte-Hqhg0173"
+        },
+        "params": {},
+        "retry": true,
+        "responseType": "unknown"
+    },
+    "data": {
+        "kind": "calendar#calendarList",
+        "etag": "\"p33ga5v5uqe9820o\"",
+        "nextSyncToken": "COCi_L7TkoEDEhAzMXdhc2FAZ21haWwuY29t",
+        "items": [
+            {
+                "kind": "calendar#calendarListEntry",
+                "etag": "\"1610871407070000\"",
+                "id": "ja.japanese#holiday@group.v.calendar.google.com",
+                "summary": "日本の祝日",
+                "description": "日本の祝日と行事",
+                "timeZone": "Asia/Tokyo",
+                "colorId": "17",
+                "backgroundColor": "#9a9cff",
+                "foregroundColor": "#000000",
+                "selected": true,
+                "accessRole": "reader",
+                "defaultReminders": [],
+                "conferenceProperties": {
+                    "allowedConferenceSolutionTypes": [
+                        "hangoutsMeet"
+                    ]
+                }
+            },
+            {
+                "kind": "calendar#calendarListEntry",
+                "etag": "\"1612599443625000\"",
+                "id": "addressbook#contacts@group.v.calendar.google.com",
+                "summary": "誕生日",
+                "description": "Google コンタクトに登録されている連絡先の誕生日、記念日、その他の予定が表示されます。",
+                "timeZone": "Asia/Tokyo",
+                "summaryOverride": "誕生日",
+                "colorId": "13",
+                "backgroundColor": "#92e1c0",
+                "foregroundColor": "#000000",
+                "selected": true,
+                "accessRole": "reader",
+                "defaultReminders": [],
+                "conferenceProperties": {
+                    "allowedConferenceSolutionTypes": [
+                        "hangoutsMeet"
+                    ]
+                }
+            },
+            {
+                "kind": "calendar#calendarListEntry",
+                "etag": "\"1656946841199000\"",
+                "id": "31wasa@gmail.com",
+                "summary": "31wasa@gmail.com",
+                "timeZone": "Asia/Tokyo",
+                "colorId": "14",
+                "backgroundColor": "#9fe1e7",
+                "foregroundColor": "#000000",
+                "selected": true,
+                "accessRole": "owner",
+                "defaultReminders": [
+                    {
+                        "method": "popup",
+                        "minutes": 30
+                    }
+                ],
+                "notificationSettings": {
+                    "notifications": [
+                        {
+                            "type": "eventCreation",
+                            "method": "email"
+                        },
+                        {
+                            "type": "eventChange",
+                            "method": "email"
+                        },
+                        {
+                            "type": "eventCancellation",
+                            "method": "email"
+                        },
+                        {
+                            "type": "eventResponse",
+                            "method": "email"
+                        }
+                    ]
+                },
+                "primary": true,
+                "conferenceProperties": {
+                    "allowedConferenceSolutionTypes": [
+                        "hangoutsMeet"
+                    ]
+                }
+            }
+        ]
+    },
+    "headers": {
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "cache-control": "private, max-age=0, must-revalidate, no-transform",
+        "connection": "close",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Tue, 05 Sep 2023 05:26:04 GMT",
+        "expires": "Tue, 05 Sep 2023 05:26:04 GMT",
+        "server": "ESF",
+        "transfer-encoding": "chunked",
+        "vary": "Origin, X-Origin, Referer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "0"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "request": {
+        "responseURL": "https://www.googleapis.com/calendar/v3/users/me/calendarList"
+    }
+}
