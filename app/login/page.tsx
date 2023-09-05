@@ -1,10 +1,14 @@
-import React from "react";
+import { LoginButton, LogoutButton } from './_components/button/authButton'
+import { getServerSession } from 'next-auth';
+import { AppProvider } from './_providers';
 
-export default function Page() {
+export default async function Home() {
+  const session = await getServerSession();
+
   return (
-    <>
-    <h1>hello</h1>
-    <p>world</p>
-    </>
+    <AppProvider>
+      {!session ? <LoginButton /> : null}
+      {session ? <LogoutButton /> : null}
+    </AppProvider>
   )
 }
